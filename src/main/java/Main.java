@@ -1,5 +1,5 @@
 public class Main {
-    private static final String SVC = "FaultInjector_256810";
+    private static final String SVC = "FaultInjector_c2b510";
     static class AppException extends RuntimeException { final String code; AppException(String code, String msg) { super(msg); this.code = code; } }
     static class NotFound extends AppException { NotFound(String id) { super("NOT_FOUND", "Resource " + id + " not found"); } }
     static class Conflict extends AppException { Conflict(String id) { super("CONFLICT", "Resource " + id + " already exists"); } }
